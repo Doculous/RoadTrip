@@ -1,0 +1,30 @@
+﻿@model AzureRoadTripSite.Models.Stage
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Stage</legend>
+
+    <div class="display-label">StartLocation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartLocation)
+    </div>
+
+    <div class="display-label">StopLocation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StopLocation)
+    </div>
+
+    <div class="display-label">Comments</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Comments)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

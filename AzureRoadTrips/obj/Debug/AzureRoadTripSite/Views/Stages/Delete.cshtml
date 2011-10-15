@@ -1,0 +1,33 @@
+﻿@model AzureRoadTripSite.Models.Stage
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Stage</legend>
+
+    <div class="display-label">StartLocation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StartLocation)
+    </div>
+
+    <div class="display-label">StopLocation</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.StopLocation)
+    </div>
+
+    <div class="display-label">Comments</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Comments)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
