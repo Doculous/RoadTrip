@@ -11,7 +11,7 @@ namespace AzureRoadTripSite
     {
         public override bool OnStart()
         {
-            // For information on handling configuration changes Changed
+            // For information on handling configuration changes Changed big time
             // see the MSDN topic at http://go.microsoft.com/fwlink/?LinkId=166357.
 
             return base.OnStart();
